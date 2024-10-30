@@ -1,0 +1,157 @@
+#wpbody-content {
+	display: none;
+}
+#poststuff .inside {
+	padding: 0 24px 24px;
+}
+
+#fca_lcwp_submit_button{
+	margin-right: 5px;
+}
+#fca-lcwp-site-url {
+	display: inline-block;
+	line-height: 25px;
+	background-color: #f4f6f8;
+	color: #555;
+	border: 1px solid #ccc;
+	padding: 0 8px;
+	border-radius: 3px 0 0 3px;
+	margin-right: -5px;
+}
+.fca-lcwp-setting-table {
+	width: 100%;
+	line-height: 34px;
+}
+.fca-lcwp-setting-table input:not(.ed_button),
+.fca-lcwp-setting-table textarea:not(.ed_button),
+.fca-lcwp-setting-table select:not(.ed_button) {
+	width: 100%;
+}
+
+.fca-lcwp-setting-table input.fca-lcwp-deploy_url_url {
+	display:inline-block; 
+	width: auto; 
+	min-width: 240px;
+}
+
+.fca-lcwp-setting-table th {
+	text-align: left;
+	vertical-align: top;
+	width: 200px;
+	font-weight: normal;
+	
+}
+.fca-lcwp-setting-table td {
+	text-align: left;
+	width: calc(100% - 200px);
+}
+
+
+.fca_lcwp_info_span {
+	position: relative;
+	top: -3px;
+	font-style: italic;
+}
+
+/* TOOLTIP ICON */
+.fca_lcwp_tooltip {
+	font-size: 17px;
+	vertical-align: middle;
+	color: #666;
+	margin-left: 2px;
+}	
+
+/* ON OFF SWITCH */
+
+.onoffswitch {
+	position: relative; width: 76px;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+	display: none;
+}
+.onoffswitch-label {
+	display: block; overflow: hidden; cursor: pointer;
+	border: 1px solid #FFF; border-radius: 20px;
+}
+.onoffswitch-inner {
+	display: block; width: 200%; margin-left: -100%;
+	transition: margin 0.3s ease-in-out 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+	display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+	font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+	box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+	content: attr(data-content-on);
+	padding-left: 10px;
+	background-color: #0085ba; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+	content: attr(data-content-off);
+	padding-right: 10px;
+	background-color: #EEEEEE; color: #32373c;
+	text-align: right;
+	font-weight: 500;
+}
+.onoffswitch-switch {
+	display: block; width: 18px; margin: 6px;
+	background: #FFFFFF;
+	position: absolute; top: 0; bottom: 0;
+	right: 42px;
+	border: 1px solid #999999; border-radius: 20px;
+	transition: all 0.3s ease-in-out 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+	margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+	right: 0px; 
+}
+
+/* SPINNER CSS */
+
+.fca_lcwp_spinner {
+	float: right;
+	margin-bottom: -22px;	
+	margin-right: -22px;
+	position: relative;
+	top: -20px;
+	cursor: pointer;
+	font-size: 13px;
+}
+
+.fca_lcwp_spinner.spin {
+	pointer-events: none;
+	-webkit-animation-name: spinnerRotate;
+	-webkit-animation-duration: 0.8s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-name: spinnerRotate;
+	-moz-animation-duration: 0.8s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	-ms-animation-name: spinnerRotate;
+	-ms-animation-duration: 0.8s;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-timing-function: linear;
+	-webkit-transform-origin: 50% calc(50% - 3.5px);
+	transform-origin: 50% calc(50% - 3.5px);
+}
+
+@-webkit-keyframes spinnerRotate
+{
+	from{-webkit-transform:rotate(0deg);}
+	to{-webkit-transform:rotate(-360deg);}
+}
+@-moz-keyframes spinnerRotate
+{
+	from{-moz-transform:rotate(0deg);}
+	to{-moz-transform:rotate(-360deg);}
+}
+@-ms-keyframes spinnerRotate
+{
+	from{-ms-transform:rotate(0deg);}
+	to{-ms-transform:rotate(-360deg);}
+}
